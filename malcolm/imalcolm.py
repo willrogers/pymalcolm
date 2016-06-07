@@ -7,7 +7,7 @@ import os
 if __name__ == "__main__":
     # Test
     from pkg_resources import require
-    require("tornado")
+    require("tornado")  # noqa
     sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
 from malcolm.core.syncfactory import SyncFactory
